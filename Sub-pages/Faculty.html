@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../img1/i.png">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: rgb(209, 214, 219);
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            /* background-color: rgba(71, 227, 255, 0.637); */
+            /* font-family: 'Baloo Bhaijaan 2', cursive; */
+        }
+
+        /* ---------------------------------------------------------------Home Section -------------------------------------------------------- */
+        .boxe {
+            margin-top: 35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* background-color: rgba(71, 227, 255, 0.637); */
+            /* flex-direction: row;  by default row  */
+        }
+
+        .boxe .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 450px;
+            border-radius: 2px;
+            margin: 10px 10px;
+            padding: 20px 20px;
+            background: white;
+            /* border: 2px solid rgb(49, 6, 6);  */
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 20%);
+        }
+
+        .boxe .boxes:hover {
+            transform: scale(1.02);
+            z-index: -1;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .vl {
+            margin-left: 10px;
+            border-left: 2px solid rgb(212, 208, 208);
+            height: 235px;
+        }
+
+        .boxes .imgg img {
+            margin: 30px auto;
+            display: block;
+            height: 235px;
+            width: 200px;
+            margin: auto;
+            border-radius: 4px;
+        }
+
+        .boxes p {
+            padding: 15px;
+        }
+
+        p span {
+            margin: 0px 4px;
+            border-left: 2px solid rgb(88, 88, 88);
+            height: 10px;
+        }
+
+        /*------------ ------------------media query---------------------------------------------------------*/
+        @media screen and (max-width:968px) {
+            body {
+                background: rgba(71, 227, 255, 0.637);
+            }
+
+            .boxe .boxes {
+                border-radius: 20px;
+            }
+        }
+
+        @media screen and (min-width:200px) and (max-width:444px) {
+            .boxe .boxes {
+                height: 400px;
+                width: 500px;
+                border-radius: 20px;
+            }
+        }
+
+        /* -----------------------------------------------------media query closed-------------------------------- */
+    </style>
+</head>
+
+<body>
+
+    <!----------------------------------------------------------------- Navbar --------------------------------------------------------------->
+    <div class="navbar">
+        <div class="center">
+            <ul>
+                <li><a href="../indexx.html">Home</a></li>
+                <li><a href="../indexx.html">Department</a></li>
+                <li><a href="Faculty.html">Faculty</a></li>
+
+                <div class="log">
+                    <a href="../indexx.html"><img src="../imgs/log.jpg" alt="mycollege.com"></a>
+                </div>
+
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <li><a href="ContactUs.html">ContactUs</a></li>
+                <li><a href="Help.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------------------Home Section------------------------------------------------->
+    <div class="boxe">
+
+        <!------------------------------------------ box1------------------------------------------ -->
+        <div class="boxes">
+            <div class="imgg">
+                <img src="timg/one.jpg" alt="">
+            </div>
+            <div class="vl"></div>
+            <p>
+                <b>Mr. David Grey</b><br> <br>
+                Ortan Hall <br>
+                Templaton House <br><br>
+                Applied Technology <br>
+                IT Engineer Phd. <br>
+                Faculty Member <br><br>
+                <i> 716-624-2023 (School) </i><br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span></span>
+                <a href="#">profile</a>
+            </p>
+
+        </div>
+
+        <!------------------------------------------ box2------------------------------------------ -->
+        <div class="boxes">
+            <div class="imgg">
+                <img src="timg/two.jpg" alt="">
+            </div>
+            <div class="vl"></div>
+            <p>
+                <b>Mrs. Rachel Green</b><br><br>
+                Red Alert <br>
+                Rectangle House <br><br>
+                Applied Chemistry <br>
+                Msc. Chemistry <br>
+                Faculty Member <br><br>
+                <i> 342-745-2393 </i>(School) <br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span></span>
+                <a href="#">profile</a>
+            </p>
+        </div>
+
+
+        <!------------------------------------------ box3------------------------------------------ -->
+        <div class="boxes">
+            <div class="imgg">
+                <img src="timg/three.jpg" alt="">
+            </div>
+            <div class="vl"></div>
+            <p>
+                <b>Mr. Mathew Perry</b><br> <br>
+                Central Perk <br>
+                Narrow Street<br><br>
+                Applied Physics <br>
+                Msc. Physics <br>
+                Faculty Member <br><br>
+                <i> 745-923-9433 (School) </i><br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span></span>
+                <a href="#">profile</a>
+            </p>
+
+        </div>
+
+        <!------------------------------------------ box4------------------------------------------ -->
+        <div class="boxes">
+            <div class="imgg">
+                <img src="timg/four.jpg" alt="">
+            </div>
+            <div class="vl"></div>
+            <p>
+                <b>Mrs. Monica Geller</b><br><br>
+                Blooming Dale <br>
+                Brute Center <br><br>
+                Applied Mathematics <br>
+                Phd. Mathematics <br>
+                Faculty Member <br><br>
+                <i> 204-583-3483 (School) </i><br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span></span>
+                <a href="#">profile</a>
+            </p>
+        </div>
+
+
+        <!------------------------------------------ box5------------------------------------------ -->
+        <div class="boxes">
+            <div class="imgg">
+                <img src="timg/five.jpg" alt="">
+            </div>
+            <div class="vl"></div>
+            <p>
+                <b>Mr. Ross Hiddleston</b><br> <br>
+                Blue Aston <br>
+                British Colony <br><br>
+                Cyber Security <br>
+                IT Engineer <br>
+                Faculty Member <br><br>
+                <i> 252-060-2853 </i>(School) <br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span></span>
+                <a href="#">profile</a>
+            </p>
+        </div>
+
+
+        <!------------------------------------------ box6------------------------------------------ -->
+        <div class="boxes">
+            <div class="imgg">
+                <img src="timg/six.jpg" alt="">
+            </div>
+            <div class="vl"></div>
+            <p>
+                <b>Mrs. Pheobe Buffay</b><br> <br>
+                Lancestor Bruke <br>
+                Silver Area <br><br>
+                Disaster Management <br>
+                Phd. Human Resources <br>
+                Faculty Member <br><br>
+                <i> 754-939-9573 </i>(School) <br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span></span>
+                <a href="#">profile</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../img1/i.png">
+    <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css">
+    <style>
+        body {
+            background-color: rgba(71, 227, 255, 0.637);
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            background: url(c.jpg) no-repeat center center/cover;
+            height: 400px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            border-radius: 2px;
+            z-index: -1;
+            opacity: 0.8;
+            border-bottom-right-radius: 16px;
+        }
+
+
+        /* -----------------------------------------------------------------form css---------------------------------------------------------- */
+
+        .container {
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            background: #f2f2f2;
+            border-radius: 5px;
+            margin: 100px auto;
+            padding: 10px 0px;
+            width: 35%;
+        }
+
+        h3 {
+            margin: 15px 10px;
+            font-size: 1.9rem;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: left;
+            display: block;
+            width: 400px;
+            height: 15px;
+            padding: 16px 0px;
+            border: 2px solid black;
+            margin: 15px auto;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+
+        .form-group span {
+            margin-left: 64px;
+        }
+
+        .gen {
+            text-align: center;
+            margin: 10px auto;
+            width: 400px;
+        }
+
+        .gen .heading {
+            margin-bottom: 10px;
+        }
+
+        .gen textarea {
+            width: 400px;
+            font-family: 'Bree Serif', serif;
+            border: 2px solid green;
+            border-bottom-left-radius: 7px;
+            border-top-right-radius: 7px;
+        }
+
+        .gen select {
+            border: 2px solid rgb(33, 36, 36);
+            border-radius: 3px;
+        }
+
+        .container h3 {
+            text-align: center;
+            color: rgb(37, 6, 68);
+            font: weight 900px;
+        }
+
+        .container button {
+            display: block;
+            width: 44%;
+            margin: 5px auto;
+            font-size: 15px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: rgb(29, 181, 252);
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+
+        /*---------------------------------------------------------------------- Media queries------------------------------------------ */
+        @media screen and (max-width:969px) {
+
+            .container::before {
+                top: 280px;
+            }
+        }
+
+        @media screen and (min-width:1149px) and (max-width:1299px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 45%;
+            }
+        }
+
+        @media screen and (min-width:949px) and (max-width:1149px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 55%;
+            }
+        }
+
+        @media screen and (min-width:749px) and (max-width:949px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 65%;
+            }
+        }
+
+        @media screen and (min-width:599px) and (max-width:749px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 75%;
+            }
+        }
+
+        @media screen and (min-width:499px) and (max-width:599px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 80%;
+            }
+        }
+
+        @media screen and (min-width:399px) and (max-width:499px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 90%;
+            }
+
+            .form-group input {
+                width: 300px;
+            }
+
+            .gen textarea {
+                width: 300px;
+            }
+
+            .hi {
+                display: block;
+            }
+
+            .gen {
+                width: 350px;
+            }
+        }
+
+        @media screen and (max-width:399px) {
+
+            .container {
+                margin: 120px auto;
+                padding: 10px 0px;
+                width: 95%;
+            }
+
+            .form-group input {
+                width: 190px;
+            }
+
+            .gen textarea {
+                width: 300px;
+            }
+
+            .hi {
+                display: block;
+            }
+
+            .gen {
+                width: 350px;
+            }
+        }
+
+        /*-------------------------------------------------------- Media queries closed------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+
+    <!-------------------------------------------------------------------- Navbar ------------------------------------------------------>
+
+    <div class="navbar">
+        <div class="center">
+            <ul>
+                <li><a href="../indexx.html">Home</a></li>
+                <li><a href="../indexx.html">Department</a></li>
+                <li><a href="Faculty.html">Faculty</a></li>
+
+                <div class="log">
+                    <a href="../indexx.html"><img src="../imgs/log.jpg" alt="mycollege.com"></a>
+                </div>
+
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <li><a href="ContactUs.html">ContactUs</a></li>
+                <li><a href="Help.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------Form ---------------------------------------------------->
+
+    <div class="container">
+        <h3>Have Some Questions?</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <span class="alignn">Your Name </span>
+                <input type="text" name="" placeholder="   e.g. John Wick">
+            </div>
+
+            <div class="form-group">
+                <span class="alignn">Your Email Address </span>
+                <input type="email" name="" placeholder="   e.g. Johnwick@gmail.com">
+            </div>
+
+            <div class="gen">
+                <label for="carr" class="hi">Select your Device Preference &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                <select name="option" id="carr">
+                    <option value="Freefire"> iPhone</option>
+                    <option value="Pubg"> Desktop Computer</option>
+                    <option value="Chess"> Laptop</option>
+                    <option value="Ludo"> MacBook</option>
+                    <!-- By default selected car will be ferrari  -->
+                    <option value="ferrari" selected> Android</option>
+                </select>
+            </div>
+
+            <div class="gen">
+                Gender&nbsp;&nbsp;: <label for="gen">&nbsp;&nbsp; Male</label>
+                <input type="radio" name="genf" id="gen">
+
+                <label for="gent">&nbsp;&nbsp; FeMale</label>
+                <input type="radio" name="genf" id="gent">
+
+                <label for="gens">&nbsp;&nbsp; Others</label>
+                <input type="radio" name="genf" id="gens">
+            </div>
+
+
+            <div class="form-group">
+                <span class="alignn">Your Phone Number </span>
+                <input type="number" name="" placeholder="   e.g. 86286-39284">
+            </div>
+
+            <div class="gen">
+                <label for="date">Date&nbsp;&nbsp; :&nbsp;&nbsp;</label>
+                <input type="date" name="myrole" id="date">
+            </div>
+
+            <div class="gen">
+                <div class="heading">How can we help? </div>
+                <textarea name="mytext" rows="3" cols="40"
+                    placeholder="   e.g. Facing problem while visiting website....&#128549;"></textarea>
+            </div>
+
+            <div class="gen">
+                <label for="elgg">I'm not a robot&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" name="elgibility" id="elgg">
+            </div>
+
+            <button class="btn">Send</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

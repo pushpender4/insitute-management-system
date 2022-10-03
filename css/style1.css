@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------------- navbar styling---------------------------------------------------------- */
+.navbar {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    /* border-top-left-radius: 16px;
+border-bottom-right-radius: 16px; */
+}
+
+
+.log img {
+    margin: 15px 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.center {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 20px;
+}
+
+.center ul {
+    list-style: none;
+    display: flex;
+}
+
+.center ul li {
+    padding: 20px 20px;
+}
+
+.center ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: white;
+    /* font-family: 'Ubuntu', sans-serif;
+    font-family: 'Baloo Da 2', cursive; */
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+
+.center ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+.center ul li a:active {
+    /* background-color: rgb(149, 162, 199); */
+    background-color: black;
+    color: white;
+}

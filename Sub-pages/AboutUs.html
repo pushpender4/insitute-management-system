@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../img1/i.png">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Source+Serif+4&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgba(214, 209, 191, 0.637);
+            font-family: 'Baloo Bhai', cursive;
+            color: white;
+        }
+
+        /* --------------------------------------------------------------------Home Section ------------------------------------------------ */
+
+        .im::before {
+            content: "";
+            position: absolute;
+            background: url(a.jpg) no-repeat center center/cover;
+            height: 400px;
+            top: 109px;
+            left: 0px;
+            width: 100%;
+            border-radius: 2px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .im h1 {
+            color: white;
+            margin-left: 220px;
+            margin-top: 50px;
+            font-size: 2.7rem;
+        }
+
+        .im p {
+            color: #000000;
+            margin-left: 220px;
+            font-size: 1rem;
+        }
+
+        .im button {
+            color: white;
+            margin-left: 220px;
+        }
+
+        button {
+            background-color: #ff5e00;
+            padding: 10px 15px;
+            font-size: 1.3rem;
+            margin: 20px;
+            border: 0px solid rgb(231, 93, 14);
+            border-radius: 20px;
+        }
+
+        button a {
+            text-decoration: none;
+        }
+
+        button:hover {
+            color: white;
+            border: 0px solid white;
+            background-color: orange;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* -------------------------------------------------------------Last Four Boxes --------------------------------------------------------------- */
+
+        .bx {
+            margin-top: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .bx .bxx {
+            height: 355px;
+            position: relative;
+            flex-basis: 25%;
+        }
+
+        .bx .bxx .clr::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #ff5e00;
+            z-index: -1;
+            opacity: 0.9;
+            height: 100%;
+            width: 100%;
+        }
+
+        .bx .bxx .cl::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(4, 4, 20);
+            z-index: -1;
+            opacity: 0.9;
+            height: 100%;
+            width: 100%;
+        }
+
+        .bx .bxx img {
+            margin: 30px 150px;
+        }
+
+        .bx .bxx h3 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .bx .bxx p {
+            text-align: center;
+            padding: 2px 10px;
+        }
+
+        .bx .bxx hr {
+            width: 46px;
+            height: 3px;
+            margin: 0 auto;
+            border: none;
+            background-color: #5eff00;
+        }
+
+        .bx .bxx:hover hr {
+            width: 200px;
+            height: 3px;
+            margin: 0 auto;
+            border: none;
+            background-color: #5eff00;
+        }
+
+        .bx .bxx:hover {
+            transform: scale(1.01);
+        }
+
+        /*--------------------------------------------- media queries----------------------------------------------- */
+        @media screen and (min-width:600px) and (max-width:969px) {
+            .im::before {
+                top: 379px;
+            }
+
+            .im h1 {
+                font-size: 1.8rem;
+                margin-left: 130px;
+            }
+
+            .im p {
+                font-size: 1.1rem;
+                margin-left: 130px;
+            }
+
+            .im button {
+                margin-left: 130px;
+            }
+
+            button {
+                font-size: 1rem;
+                margin: 10px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .bx .bxx {
+                z-index: -1;
+            }
+
+            .im::before {
+                top: 382px;
+            }
+
+            .im h1 {
+                margin-left: 60px;
+                font-size: 1.7rem;
+            }
+
+            .im p {
+                margin-left: 60px;
+                font-size: 1rem;
+            }
+
+            .im button {
+                margin-left: 60px;
+            }
+
+            button {
+                font-size: 1rem;
+                margin: 10px;
+            }
+        }
+
+
+        @media screen and (min-width:900px) and (max-width:969px) {
+            .bx .bxx {
+                z-index: -1;
+            }
+        }
+
+        @media screen and (min-width:400px) and (max-width:900px) {
+            .bx .bxx {
+                height: 300px;
+                z-index: -1;
+                margin: 10px 20px;
+            }
+
+            .bx .bxx img {
+                margin-left: 100px;
+            }
+
+            .bx .bxx h3 {
+                font-size: .9rem;
+                font-weight: 700;
+            }
+
+            .bx .bxx p {
+                font-size: .8rem;
+                font-weight: 300;
+                padding: 1px 5px;
+            }
+        }
+
+        /*--------------------------------------------------- media queries closed--------------------------------------- */
+    </style>
+</head>
+
+<body>
+
+    <!---------------------------------------------------------------------- navbar ----------------------------------------------------->
+
+    <div class="navbar">
+        <div class="center">
+            <ul>
+                <li><a href="../indexx.html">Home</a></li>
+                <li><a href="../indexx.html">Department</a></li>
+                <li><a href="Faculty.html">Faculty</a></li>
+
+                <div class="log">
+                    <a href="../indexx.html"><img src="../imgs/log.jpg" alt="mycollege.com"></a>
+                </div>
+
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <li><a href="ContactUs.html">ContactUs</a></li>
+                <li><a href="Help.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------- Home Seciton ------------------------------------------------>
+
+    <div class="im">
+        <h1>Unniversity, College <br> School Education &nbsp;&#127960;</h1>
+        <p>
+            I would found an institution where any person can find instruction in study.<br> In God we hope.
+        </p>
+        <button class="tb"><a href="ContactUs.html"> Contact Us</a></button>
+    </div>
+
+    <!----------------------------------------------------------------------- Last four boxes ------------------------------------------------>
+
+    <div class="bx">
+
+        <div class="bxx">
+            <div class="clr">
+                <img src="icn/t.png" alt="" width="20%">
+                <h3> Certified Teachers </h3>
+                <hr>
+                <p>A teacher, also called a schoolteacher or formally an educator, is a person who helps students to
+                    acquire knowledge, competence or virtue..
+                    Informally the role of teacher may be taken on by anyone..
+                </p>
+            </div>
+        </div>
+
+        <div class="bxx">
+            <div class="cl">
+                <img src="icn/s.png" alt="" width="20%">
+                <h3> Special Education </h3>
+                <hr>
+                <p>Education is both the act of teaching knowledge to others and the act of receiving knowledge from
+                    someone else. Education also refers to knowledge received through instruction and institution..</p>
+            </div>
+        </div>
+
+        <div class="bxx">
+
+            <div class="clr">
+                <img src="icn/l.png" alt="" width="20%">
+                <h3> Books & Library </h3>
+                <hr>
+                <p>A library is a collection of books or media that are easily accessible for use and not just for
+                    display purposes. It is responsible for housing updated information in order to meet the user's
+                    needs on daily basis..</p>
+            </div>
+        </div>
+
+        <div class="bxx">
+            <div class="cl">
+                <img src="icn/sp.png" alt="" width="20%">
+                <h3> Sports Club </h3>
+                <hr>
+                <p>Sport pertains to any form of competitive physical activity that aims to use, maintain or improve
+                    physical ability and skills while providing enjoyment to participants and, entertainment to
+                    spectators..</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
