@@ -217,7 +217,7 @@ section1::before {
 .dept .box {
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     background: #f2f2f2;
-    border-radius: 25px;
+    border-radius: 10px;
     margin: 10px 40px;
     padding: 35px;
     flex-basis: 26%;
@@ -453,7 +453,7 @@ hr {
 @media screen and (max-width:1472px) {
     .dept .box {
         box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-        background: #d0d5df;
+        background: #f2f2f2;
         height: 440px;
     }
 
