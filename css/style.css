@@ -211,7 +211,6 @@ section1::before {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
 .dept .box {
@@ -219,6 +218,7 @@ section1::before {
     background: #f2f2f2;
     border-radius: 10px;
     margin: 10px 40px;
+    margin-bottom: 25px;
     padding: 35px;
     flex-basis: 26%;
     height: 400px;

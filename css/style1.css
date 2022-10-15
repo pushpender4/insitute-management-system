@@ -69,6 +69,31 @@ border-bottom-right-radius: 16px; */
 
 /* .center ul li a:active {
     /* background-color: rgb(149, 162, 199); */
-    /* background-color: black; */
-    /* color: white; */
-/* } */ 
+/* background-color: black; */
+/* color: white; */
+/* } */
+/*------------------------------------------------------- ---scroll bar -------------------------------------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(1, 11, 23, 1) 100%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 14%, rgba(252, 70, 107, 1) 100%);
+}
