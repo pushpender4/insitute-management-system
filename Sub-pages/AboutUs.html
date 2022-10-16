@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../img1/i.png">
     <link rel="stylesheet" href="../css/style1.css">
-    <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Source+Serif+4&display=swap" rel="stylesheet">
 
     <style>
@@ -19,8 +19,7 @@
             color: white;
         }
 
-        /* --------------------------------------------------------------------Home Section ------------------------------------------------ */
-
+        /* -------------------------------------------------Home Section ------------------------------------------------ */
         .im::before {
             content: "";
             position: absolute;
@@ -36,20 +35,21 @@
 
         .im h1 {
             color: white;
-            margin-left: 220px;
+            margin-left: 150px;
             margin-top: 50px;
             font-size: 2.7rem;
         }
 
         .im p {
-            color: #000000;
-            margin-left: 220px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            margin-left: 150px;
             font-size: 1rem;
         }
 
         .im button {
             color: white;
-            margin-left: 220px;
+            margin-left: 150px;
         }
 
         button {
@@ -74,15 +74,13 @@
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
 
-        /* -------------------------------------------------------------Last Four Boxes --------------------------------------------------------------- */
-
+        /* --------------------------------------------------Last Four Boxes ------------------------------------------ */
         .bx {
             margin-top: 75px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-
         }
 
         .bx .bxx {
@@ -204,7 +202,6 @@
             }
         }
 
-
         @media screen and (min-width:900px) and (max-width:969px) {
             .bx .bxx {
                 z-index: -1;
@@ -234,13 +231,49 @@
             }
         }
 
+        /*--------------------------------------------------- media query for navbar responsive ---------------------------- */
+        @media screen and (max-width:969px) {
+            .navbar {
+                position: static;
+            }
+
+            .navbar::before {
+                opacity: 1;
+                background-color: black;
+                height: 640px;
+            }
+
+            .center ul {
+                margin-top: 70px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .center ul li {
+                padding: 20px 10px;
+            }
+
+            .center ul li a {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            .im::before {
+                top: 640px;
+            }
+
+            .im {
+                margin-top: 120px;
+            }
+        }
+
         /*--------------------------------------------------- media queries closed--------------------------------------- */
     </style>
 </head>
 
 <body>
 
-    <!---------------------------------------------------------------------- navbar ----------------------------------------------------->
+    <!----------------------------------------------------- navbar ----------------------------------------------->
 
     <div class="navbar">
         <div class="center">
@@ -260,8 +293,7 @@
         </div>
     </div>
 
-    <!---------------------------------------------------------------------- Home Seciton ------------------------------------------------>
-
+    <!---------------------------------------------------- Home Seciton ---------------------------------------->
     <div class="im">
         <h1>Unniversity, College <br> School Education &nbsp;&#127960;</h1>
         <p>
@@ -269,9 +301,7 @@
         </p>
         <button class="tb"><a href="ContactUs.html"> Contact Us</a></button>
     </div>
-
-    <!----------------------------------------------------------------------- Last four boxes ------------------------------------------------>
-
+    <!-------------------------------------------------- Last four boxes -------------------------------------------->
     <div class="bx">
 
         <div class="bxx">

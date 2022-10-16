@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../img1/i.png">
     <link rel="stylesheet" href="../css/style1.css">
-    <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 969px)" href="../css/nav_res.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -20,20 +20,15 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
             font-size: 13px;
-            /* background-color: rgba(71, 227, 255, 0.637); */
-            /* font-family: 'Baloo Bhaijaan 2', cursive; */
         }
-        
 
-        /* ---------------------------------------------------------------Home Section -------------------------------------------------------- */
+        /* ------------------------------------------------Home Section ---------------------------------------------- */
         .boxe {
-            margin-top: 35;
+            margin-top: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            /* background-color: rgba(71, 227, 255, 0.637); */
-            /* flex-direction: row;  by default row  */
         }
 
         .boxe .boxes {
@@ -46,7 +41,6 @@
             margin: 10px 10px;
             padding: 20px 20px;
             background: white;
-            /* border: 2px solid rgb(49, 6, 6);  */
             box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 20%);
         }
 
@@ -100,13 +94,41 @@
             }
         }
 
+        /*--------------------------------------------------- media query for navbar responsive ---------------------------- */
+        @media screen and (max-width:969px) {
+            .navbar {
+                position: static;
+            }
+
+            .navbar::before {
+                opacity: 1;
+                background-color: black;
+                height: 640px;
+            }
+
+            .center ul {
+                margin-top: 70px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .center ul li {
+                padding: 20px 10px;
+            }
+
+            .center ul li a {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+
         /* -----------------------------------------------------media query closed-------------------------------- */
     </style>
 </head>
 
 <body>
 
-    <!----------------------------------------------------------------- Navbar --------------------------------------------------------------->
+    <!------------------------------------------- Navbar --------------------------------------------------------------->
     <div class="navbar">
         <div class="center">
             <ul>
@@ -124,10 +146,8 @@
             </ul>
         </div>
     </div>
-
-    <!------------------------------------------------------------------------------Home Section------------------------------------------------->
+    <!------------------------------------------------------------------------------Home Section---------------------------------->
     <div class="boxe">
-
         <!------------------------------------------ box1------------------------------------------ -->
         <div class="boxes">
             <div class="imgg">
@@ -146,9 +166,7 @@
                 <span></span>
                 <a href="#">profile</a>
             </p>
-
         </div>
-
         <!------------------------------------------ box2------------------------------------------ -->
         <div class="boxes">
             <div class="imgg">
@@ -168,8 +186,6 @@
                 <a href="#">profile</a>
             </p>
         </div>
-
-
         <!------------------------------------------ box3------------------------------------------ -->
         <div class="boxes">
             <div class="imgg">
@@ -188,9 +204,7 @@
                 <span></span>
                 <a href="#">profile</a>
             </p>
-
         </div>
-
         <!------------------------------------------ box4------------------------------------------ -->
         <div class="boxes">
             <div class="imgg">
@@ -210,8 +224,6 @@
                 <a href="#">profile</a>
             </p>
         </div>
-
-
         <!------------------------------------------ box5------------------------------------------ -->
         <div class="boxes">
             <div class="imgg">
@@ -231,8 +243,6 @@
                 <a href="#">profile</a>
             </p>
         </div>
-
-
         <!------------------------------------------ box6------------------------------------------ -->
         <div class="boxes">
             <div class="imgg">
