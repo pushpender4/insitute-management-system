@@ -268,7 +268,7 @@ hr {
 /*----------------------------------------------- Copyright And Icons-------------------------------------------------- */
 
 .ftt {
-    background-color: #cacad6;
+    background-color: black;
     width: 100%;
     margin: 10px auto;
     height: 80px;
@@ -286,19 +286,19 @@ hr {
     display: flex;
     justify-content: center;
     margin-left: 10px;
-    color: rgb(0 255 55);
+    /* color: rgb(0 255 55); */
 }
 
 /* ------------------icons closed------------------------------ */
 
 .sp {
     margin-left: 10px;
-    color: #6a0c00;
+    color: white;
 }
 
 .spp {
     margin-left: 690px;
-    color: #0e3b00;
+    color: white;
 }
 
 
