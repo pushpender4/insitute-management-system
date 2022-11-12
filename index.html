@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My College</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" media="screen and (max-width: 969px)" href="/css/nav_res.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -15,28 +16,27 @@
 </head>
 
 <body>
-
     <!------------------------------------------------------------Navbar ----------------------------------------------------------------->
+    <div id="fullpage">
+        <div class="navbar nav1">
+            <div class="center">
+                <ul class="nav-list v-class">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#department">Department</a></li>
+                    <li><a href="Sub-pages/Faculty.html">Faculty</a></li>
 
-    <div class="navbar nav1">
-        <div class="center">
-            <ul class="nav-list v-class">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#department">Department</a></li>
-                <li><a href="Sub-pages/Faculty.html">Faculty</a></li>
+                    <div class="log">
+                        <a href="index.html"><img src="imgs/log.jpg" alt="mycollege.com"></a>
+                    </div>
 
-                <div class="log">
-                    <a href="index.html"><img src="imgs/log.jpg" alt="mycollege.com"></a>
-                </div>
-
-                <li><a href="Sub-pages/AboutUs.html">AboutUs</a></li>
-                <li><a href="Sub-pages/ContactUs.html">ContactUs</a></li>
-                <li><a href="Sub-pages/Help.html">Help</a></li>
-            </ul>
+                    <li><a href="Sub-pages/AboutUs.html">AboutUs</a></li>
+                    <li><a href="Sub-pages/ContactUs.html">ContactUs</a></li>
+                    <li><a href="Sub-pages/Help.html">Help</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!------------------------------------------------------ Home Section ---------------------------------------------------------------------->
+        <!----------------------------------------- Home Section -------------------------------------------------------------->
 
         <section1 class="home">
             <div class="heading">
@@ -49,93 +49,155 @@
             </div>
         </section1>
 
-    <!------------------------------------------------------- Department Boxes -------------------------------------------------------------- -->
+        <!------------------------------------------ Department Boxes -------------------------------------------------------- -->
 
-    <section2 id="department">
-        <div class="hback">
-            <div class="heading1">
-                <h1>Department</h1>
-            </div>
-        </div>
-        <div class="background">
-            <div class="dept">
-                <div class="box">
-                    <img src="img1/cs.jpg" alt="">
-                    <h2>Computer Engineering</h2>
-                    <p>The term covers a range of intertwined professions. Two general branches would be hardware and
-                        software engineering.</p>
-                    <div class="bt">
-                        <button class="btn"> Enroll Now</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="img1/cv.jpg" alt="">
-                    <h2>Civil Engineering</h2>
-                    <p>Civil engineering is a professional engineering discipline that deals with the design,
-                        construction,
-                        and environment.</p>
-                    <div class="bt">
-                        <button class="btn"> Enroll Now</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="img1/el.jpg" alt="">
-                    <h2>Electrical Engineering</h2>
-                    <p>Electrical engineering is an engineering discipline concerned with the study, design, and
-                        application
-                        of equipment.</p>
-                    <div class="bt">
-                        <button class="btn"> Enroll Now</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="img1/it.jpg" alt="">
-                    <h2>Information Technology</h2>
-                    <p>IT engineers are high-level IT personnel who design, install, and maintain a company's computer
-                        systems.</p>
-                    <div class="bt">
-                        <button class="btn"> Enroll Now</button>
-                    </div>
-
-                </div>
-                <div class="box">
-                    <img src="img1/me.jpg" alt="">
-                    <h2>Mechanical Engineering</h2>
-                    <p>Mechanical engineering is an engineering branch that combines engineering physics and mathematics
-                        principles.</p>
-                    <div class="bt">
-                        <button class="btn"> Enroll Now</button>
-                    </div>
+        <section2 id="department">
+            <div class="hback">
+                <div class="heading1">
+                    <h1>Department</h1>
                 </div>
             </div>
+            <div class="background">
+                <div class="dept">
+                    <div class="box">
+                        <img src="img1/cs.jpg" alt="">
+                        <h2>Computer Engineering</h2>
+                        <p>The term covers a range of intertwined professions. Two general branches would be hardware
+                            and
+                            software engineering.</p>
+                        <div class="bt">
+                            <button type="button" onclick="enroll()" id="bot" class="btn"> Enroll Now</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img1/cv.jpg" alt="">
+                        <h2>Civil Engineering</h2>
+                        <p>Civil engineering is a professional engineering discipline that deals with the design,
+                            construction,
+                            and environment.</p>
+                        <div class="bt">
+                            <button type="button" id="bot" onclick="enroll()" class="btn"> Enroll Now</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img1/el.jpg" alt="">
+                        <h2>Electrical Engineering</h2>
+                        <p>Electrical engineering is an engineering discipline concerned with the study, design, and
+                            application
+                            of equipment.</p>
+                        <div class="bt">
+                            <button type="button" id="bot" onclick="enroll()" class="btn"> Enroll Now</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img1/it.jpg" alt="">
+                        <h2>Information Technology</h2>
+                        <p>IT engineers are high-level IT personnel who design, install, and maintain a company's
+                            computer
+                            systems.</p>
+                        <div class="bt">
+                            <button type="button" id="bot" onclick="enroll()" class="btn"> Enroll Now</button>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <img src="img1/me.jpg" alt="">
+                        <h2>Mechanical Engineering</h2>
+                        <p>Mechanical engineering is an engineering branch that combines engineering physics and
+                            mathematics
+                            principles.</p>
+                        <div class="bt">
+                            <button type="button" id="bot" onclick="enroll()" class="btn"> Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section2>
+
+        <!----------------------------------------------------------- Footer Image ------------------------------------------------------->
+
+        <footer class="foot">
+            <img src="img1/ft.png" alt="">
+        </footer>
+
+        <hr>
+
+        <!----------------------------------------------------------Copyright And Icons -------------------------------------------------->
+
+        <div class="ftt">
+            <span class="s">
+                <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f"
+                    style="color: white; font-size: 25px; padding: 5px;"></a>
+                <a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter"
+                    style="color: white; font-size: 25px; padding: 5px;"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"
+                    style="color: white; font-size: 25px; padding: 5px;"></a>
+                <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube"
+                    style="color: white; font-size: 25px; padding: 5px;"></a>
+            </span>
+
+            <span class="sp">Credits : INTERNET &nbsp; Copyright 2022&nbsp;
+                &copy;&nbsp;My College&nbsp;
+                All Right Reserved. </span>
+
+            <span class="spp">Visitors: 10125, &nbsp;Page last updated on: 22/02/2022</span>
+
         </div>
-    </section2>
-
-    <!---------------------------------------------------------------- Footer Image --------------------------------------------------------->
-
-    <footer class="foot">
-        <img src="img1/ft.png" alt="">
-    </footer>
-
-    <hr>
-
-    <!----------------------------------------------------------Copyright And Icons --------------------------------------------------------->
-
-    <div class="ftt">
-        <span class="s">
-            <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f" style="color: white; font-size: 25px; padding: 5px;"></a> 
-            <a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter" style="color: white; font-size: 25px; padding: 5px;"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram" style="color: white; font-size: 25px; padding: 5px;"></a>
-            <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube" style="color: white; font-size: 25px; padding: 5px;"></a>
-        </span>
-
-        <span class="sp">Credits : INTERNET &nbsp; Copyright 2022&nbsp;
-            &copy;&nbsp;My College&nbsp;
-            All Right Reserved. </span>
-
-        <span class="spp">Visitors: 10125, &nbsp;Page last updated on: 22/02/2022</span>
 
     </div>
+
+    <!-- ---------------------Pop-up box when we click on enroll now button of a department boxes  -------------------------- -->
+    <div class="dv" id="dvi">
+        <form action="" name="myform">
+            <!-- -------------------cross closing icon --------- -->
+            <div class="icnnn">
+                <img src="img1/clear.png" alt="cross-icon">
+            </div>
+
+            <label for="stream">Choose a stream:</label>
+            <select name="stream" id="stream">
+                <option value="CSE" selected>Computer Science Engineering</option>
+                <option value="EE">Electrical Engineering</option>
+                <option value="CE">Civil Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="ME">Mechanical Engineering</option>
+            </select>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="number" name="number" placeholder="Enter your number">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="address" name="address" placeholder="Enter your address">
+            <textarea name="message" name="message" placeholder="Why do you want this stream" id="" cols="10"
+                rows="10"></textarea>
+
+            <!-- -------------------------------------------Submit button ----------------------- -->
+            <div class="btn">
+                <button type="button" class="subbtn" onclick="sub()" formnovalidate>Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!--------------------------------------------------------------------------- Javascript-------------------------------------------- -->
+    <script>
+        // when we click on submit button 
+        function sub() {
+            alert("Your data sent successfully....We will contact you!!!")
+            document.getElementById('dvi').style.display = "none";
+            document.getElementById('fullpage').style.opacity = "1";
+        }
+
+        // for functioning, when we click on enroll button 
+        function enroll() {
+            document.getElementById('dvi').style.display = "block";
+            document.getElementById('fullpage').style.opacity = ".6";
+        }
+
+        // for terminating the form box 
+        document.querySelector('.icnnn').addEventListener('click', function () {
+            document.getElementById('dvi').style.display = "none";
+            document.getElementById('fullpage').style.opacity = "1";
+        });
+    </script>
 </body>
 
 </html>
